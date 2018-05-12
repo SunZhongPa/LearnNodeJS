@@ -1,3 +1,8 @@
+
+
+/**
+ * 阻塞代码实例
+ */
 var fs = require('fs');
 
 // var data = fs.readFileSync('input.txt');
@@ -6,6 +11,10 @@ var fs = require('fs');
 // console.log('程序执行结束！');
 
 
+
+/**
+ * 非阻塞代码实例
+ */
 fs.readFile('input.txt',function(err,data){
     if(err){
         return console.err(err);
@@ -14,3 +23,5 @@ fs.readFile('input.txt',function(err,data){
 });
 
 console.log('程序执行结束');
+
+
